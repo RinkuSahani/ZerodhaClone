@@ -17,8 +17,8 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/signup", formData);
-      window.location.href = "http://localhost:3000/";
+      await axios.post("https://zerodhaclone-9cf2.onrender.com/signup", formData);
+      window.location.href = "https://zerodhaclone-dashboard-ieem.onrender.com";
     } catch (error) {
       console.error("Signup failed:", error);
       alert("Signup failed. Try again.");

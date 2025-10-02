@@ -22,9 +22,9 @@ function Login() {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:8000/login", formData);
+      const res = await axios.post("https://zerodhaclone-9cf2.onrender.com/login", formData);
       console.log(res.data);
-      window.location.href = "http://localhost:3000/";
+      window.location.href = "https://zerodhaclone-dashboard-ieem.onrender.com";
     } catch (err) {
       console.error(err);
       setError(err.response?.data?.error || "Invalid email or password");
